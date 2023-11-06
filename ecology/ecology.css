@@ -1,0 +1,423 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(15, 15, 15);
+    height: 500vh;
+    width: 100%;
+    font-family: 'Archivo Black', sans-serif;
+    
+}
+/* navbar */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 7vh;
+  width: 100%;
+  box-sizing: border-box;
+  transition: background-color 0.4s ease-in;
+ 
+}
+ul { 
+    list-style: none; 
+    display: flex;
+    justify-content: space-around;
+    text-align: center;    
+  }
+li { 
+    position: relative; 
+    padding: 1vh 0;
+   
+}
+li a {
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0vh;
+    display: inline-block;
+    padding: 1.5vh 2.0vh;
+    position: relative;
+    font-size: 1.5vh;
+    
+  }
+
+ li a.scroll {
+    color: #eef;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1.5vh 2.0vh;
+    position: relative;
+    font-size: 1.5vh;
+  }
+ 
+
+  li a:after {    
+    content: " ";
+    display: block;
+    height: 0.2vh;
+    position: relative;
+    background:#000000;
+    transition: width 0.3s ease 0s;
+    width: 0;
+    
+    
+  }
+ li a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+.header{
+ margin-top: 10%;
+ background-image: url('');
+ height: 100%;
+ width: 100%;
+}
+
+nav.scroll {
+  background-color: #bcff1f;
+  height: 7vh;
+  z-index: 1221;
+ 
+}
+#li-section{
+display: flex;
+}
+
+
+
+/* header */
+.container {
+	min-height: 100%;
+  position: absolute;
+  top: 7vh;
+  left: 87vh;
+
+}
+
+.center {
+	top: 20%; left: 49%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+}
+
+.apple {
+	
+	/* Text Background Effect */
+	
+	background: url('https://img.freepik.com/premium-photo/artistic-design-backdrop-infused-with-aesthetic-sensibility_480962-52194.jpg?size=626&ext=jpg&ga=GA1.1.1214837092.1697556286&semt=ais');
+	-webkit-background-clip: text;
+	color: transparent;
+
+	/* Other */
+	
+	font-family: 'Roboto', sans-serif;
+	font-size: 100px;
+	font-weight: 900;
+	animation: slice 3s, dynamic 7s infinite alternate linear;
+	white-space: nowrap;
+	
+}
+
+
+* {
+	user-select: none;
+}
+
+@media screen and (max-width: 480px) {
+	.apple {
+		font-size: 70px;
+	}
+}
+
+/* Slice Animation */
+
+@keyframes slice {
+	
+	0% {	line-height: 0%; }
+	
+	100% {	line-height: 100%; }
+	
+}
+
+/* Dynamic Background Animation */
+
+@keyframes dynamic {
+	
+	0% {	background-position: 0% }
+	
+	100% {	background-position: 100%; }
+	
+}
+
+/* Watermark */
+
+.links {
+	position: absolute;
+	bottom: 5px; left: 10px;
+}
+
+a {
+	color: #313131;
+}
+
+
+/* search */
+   
+*::selection{
+background-color: transparent;
+}
+*{
+cursor: default;
+box-sizing: border-box;
+}
+
+.container2{
+    top: 46vh;
+    left: 50vh;
+    display: flex;
+    position: absolute;
+    
+}
+
+.search{
+    box-shadow:0px 0px 20px 1px #ffffff ;
+    border: 0;
+    border-radius: 30px 0 0 30px;
+    padding: 0 10px 0 10px;
+    text-align: center;
+    color: black;
+    height: 5vh;
+    width: 64vh;
+    font-size: 25px;
+    font-weight: 1000;
+    
+}
+.search::selection{
+background-color: red;
+color: white;
+}
+.search:focus{
+border: 0;
+outline: 0;
+}
+.search:hover{
+cursor: text;
+}
+
+.search-btn{
+    transition: 0.2s ease-in-out;
+    box-shadow:0px 0px 20px 1px greenyellow ;
+    border: 0;
+    border-radius: 0 30px 30px 0;
+    padding: 0 10px 0 10px;
+    text-align: center;
+    color: black;
+    position: relative;
+    background-color: greenyellow;
+    height: 5vh;
+    width: 14vh;
+    font-size: 25px;
+    font-weight: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-btn:hover {
+transition: 0.2s ease-in-out;
+background-color: green;
+box-shadow:0px 0px 20px 1px green ;
+font-size: 30px;
+font-weight: 800;
+cursor: pointer;
+}
+
+/* ***search-btn focus style*** */
+
+/* .search-btn:focus{
+transition: 0.2s ease-in-out;
+background-color: blueviolet;
+box-shadow:0px 0px 20px 1px blueviolet ;
+font-size: 30px;
+font-weight: 800;
+cursor: pointer;
+} */
+
+/* ***search-btn focus style finsh*** */
+
+
+
+
+/* CARDS */
+@keyframes down-btn {
+  0% { bottom:20px; }    
+  100% { bottom:0px; }
+
+  0% { opacity:0; }    
+  100% { opaicty:1; }
+}
+
+@-webkit-keyframes down-btn {
+  0% { bottom:20px; }    
+  100% { bottom:0px; }
+
+  0% { opacity:0; }    
+  100% { opaicty:1; }
+}
+
+@-moz-keyframes down-btn {
+  0% { bottom:20px; }    
+  100% { bottom:0px; }
+
+  0% { opacity:0; }    
+  100% { opaicty:1; }
+}
+
+@-o-keyframes down-btn {
+  0% { bottom:20px; }    
+  100% { bottom:0px; }
+
+  0% { opacity:0; }    
+  100% { opaicty:1; }
+}
+
+.category-name {
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 40px;
+}
+
+.card-category-2 ul, .card-category-3 ul, .card-category-4 ul, .card-category-5 ul  .card-category-6 ul {
+  position: relative;
+  justify-content: space-evenly;
+  margin-top: -450vh;
+  margin-left: -30vh;
+}
+  
+.card-category-2 ul li, .card-category-3 ul li, .card-category-4 ul li, .card-category-5 ul li, .card-category-6 ul li {
+  list-style-type: none;
+  display: flex;
+  vertical-align: top;
+}
+
+.card-category-2 ul li, .card-category-3 ul li {
+  margin: 10px 5px;
+}
+
+.card-category-1, .card-category-2, .card-category-3, .card-category-4, .card-category-5, .card-category-6 {
+  font-family: sans-serif;
+  margin-bottom: 45px;
+  text-align: center;
+}
+  .card-category-1 div, .card-category-2 div {
+      display:inline-block;
+  }
+
+  .card-category-1 > div, .card-category-2 > div:not(:last-child) {
+      margin: 10px 5px;
+      text-align: left;
+  }
+
+
+
+  .img-card {
+    width:300px;
+    position: absolute;
+    border-radius: 5px;
+    text-align: left;
+
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    -o-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);        
+}
+
+    .img-card .card-image {
+        position: relative;
+        margin: auto;
+        overflow: hidden;
+        border-radius: 5px 5px 0px 0px;
+        height: 200px;
+    }
+
+    .img-card .card-image img {
+        width:100%;
+        border-radius: 5px 5px 0px 0px;
+        
+        -webkit-transition: all 0.8s;
+        -moz-transition: all 0.8s;
+        -o-transition: all 0.8s;
+        transition: all 0.8s;
+    }
+
+    .img-card .card-image:hover img {
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1);
+    }        
+
+    .img-card .card-text {
+        padding: 0 15px 15px;
+        line-height: 1.5;   
+        
+    }
+
+    .img-card .card-link {
+        padding: 20px 15px 30px;
+        width: -webkit-fill-available;
+    }
+
+        .img-card .card-link a {
+            text-decoration: none;
+            position: relative;
+            padding: 10px 0;
+        }
+
+        .img-card .card-link a:after {
+            top: 30px;
+            content: "";
+            display: block;
+            height: 2px;
+            left: 50%;
+            position: absolute;
+            width: 0;
+
+            -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            -moz-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            -o-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        }
+
+        .img-card .card-link a:hover:after { 
+            width: 100%; 
+            left: 0; 
+        }        
+    
+    .img-card.iCard-style1 .card-title {
+        position: absolute;
+        font-family: 'Open Sans', sans-serif;
+        z-index: 1;
+        top: 10px;
+        left: 10px;
+        font-size: 30px;
+        color: #fff;
+    }
+    
+    .img-card.iCard-style1 .card-text {            
+        color: #795548;
+    }
+
+    .img-card.iCard-style1 .card-link a {
+        color: #FF9800;                
+    }
+
+    .img-card.iCard-style1 .card-link a:after {            
+        background: #FF9800;
+    }
